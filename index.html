@@ -153,6 +153,8 @@ Error message and password prompt
 
 <li>$:/GitHub/Username</li>
 
+<li>$:/Import</li>
+
 <li>$:/isEncrypted</li>
 
 <li>$:/SiteTitle</li>
@@ -160,6 +162,8 @@ Error message and password prompt
 <li>$:/state/tab-1749438307</li>
 
 <li>$:/state/tab-2065006209</li>
+
+<li>$:/state/tab/sidebar--595412856</li>
 
 <li>$:/status/RequireReloadDueToPluginChange</li>
 
@@ -170,6 +174,8 @@ Error message and password prompt
 <li>$:/themes/tiddlywiki/snowwhite</li>
 
 <li>$:/themes/tiddlywiki/vanilla</li>
+
+<li>GeekLand.html</li>
 
 <li>Hello World</li>
 
@@ -9575,6 +9581,11 @@ Error message and password prompt
 <div created="20200726215303240" modified="20200726220043241" title="$:/GitHub/Username">
 <pre>cpyarger</pre>
 </div>
+<div status="complete" title="$:/Import">
+<pre>The following tiddlers were imported:
+
+# [[GeekLand.html]]</pre>
+</div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
 </div>
@@ -9587,10 +9598,13 @@ Error message and password prompt
 <div created="20200726215259226" modified="20200726215259226" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
 </div>
+<div created="20200726220102924" modified="20200726220102924" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/Tools</pre>
+</div>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20200726215839972" list="$:/ControlPanel [[Hello World]]" modified="20200726215839972" title="$:/StoryList">
+<div created="20200726215839972" list="$:/Import [[Hello World]]" modified="20200726215839972" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -9759,6 +9773,9 @@ Error message and password prompt
         }
     }
 }</pre>
+</div>
+<div created="20200211191300000" modified="20200211191300000" modifier="flint" tags="" tiddler="AgoodRoute.sh" title="GeekLand.html" type="text/x-tiddlywiki">
+<pre>Type the text for '11 February 2020'\n\n{{{\n#!/bin/bash\n# Wed 05 Feb 2020 08:15:28 AM EST\n# pflint\n#\n# wanders through and finds bounjour names...\n#\necho &quot;This program starts nmap&quot;\necho &quot;This could take a while...&quot;\nnmap 192.168.1.0/24 |grep report |cut -d &quot; &quot; -f 5 |xargs avahi-resolve --address |tee $(date +%F)_ip.out\n#\n# Here is what it looked like today:\n# 192.168.1.200	PROD4.local\n# 192.168.1.203	fits440.local\n# 192.168.1.201	alexator.local\n# 192.168.1.22	trantor.local\n# 192.168.1.29	pi41.local\n# 192.168.1.206	pandl.local\n# 192.168.1.208	alexator.local\n\n\n}}}</pre>
 </div>
 <div created="20200726215822267" modified="20200726215828589" title="Hello World">
 <pre>This is a test tiddle</pre>
