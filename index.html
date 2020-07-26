@@ -143,6 +143,12 @@ Error message and password prompt
 
 <li>.bash_fluff</li>
 
+<li>$:/config/Manager/Show</li>
+
+<li>$:/config/NewTiddler/Tags</li>
+
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home</li>
+
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/import</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/manager</li>
@@ -181,7 +187,7 @@ Error message and password prompt
 
 <li>$:/temp/info-plugin</li>
 
-<li>$:/temp/search</li>
+<li>$:/temp/NewTagName</li>
 
 <li>$:/themes/tiddlywiki/snowwhite</li>
 
@@ -534,6 +540,8 @@ Error message and password prompt
 <li>GeekLand</li>
 
 <li>geekland introduction</li>
+
+<li>GeekLand.html</li>
 
 <li>GeekNight</li>
 
@@ -1217,6 +1225,15 @@ alias dq='ls -1 |xargs du -h -s'
 }}}
 
 [[Bash Power Shell|http://www.ukuug.org/events/linux2003/papers/bash_tips/]]</pre>
+</div>
+<div created="20200726221759846" modified="20200726221759846" title="$:/config/Manager/Show">
+<pre>tags</pre>
+</div>
+<div modified="20200726221915021" tags="new" title="$:/config/NewTiddler/Tags">
+<pre></pre>
+</div>
+<div created="20200726221746336" modified="20200726221746336" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/home">
+<pre>show</pre>
 </div>
 <div created="20200726220211297" modified="20200726220211297" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/import">
 <pre>show</pre>
@@ -10597,8 +10614,13 @@ alias dq='ls -1 |xargs du -h -s'
     }
 }</pre>
 </div>
-<div created="20200726215545186" modified="20200726215601701" title="$:/DefaultTiddlers">
-<pre>[[Hello World]]</pre>
+<div created="20200726215545186" modified="20200726221900137" title="$:/DefaultTiddlers">
+<pre>
+[[geekland introduction]]
+
+[[Tiddle Tricks|https://tiddlywiki.com/#GenerateAnRssFeed]]
+
+[[Tiddlymaps? |http://tiddlymap.org/]]</pre>
 </div>
 <div created="20200726215313834" modified="20200726215315945" title="$:/GitHub/Filename">
 <pre>index.html</pre>
@@ -11106,22 +11128,22 @@ alias dq='ls -1 |xargs du -h -s'
 <div created="20200726215245707" modified="20200726215247012" title="$:/SiteTitle">
 <pre>CPYARGER</pre>
 </div>
-<div created="20200726215256431" modified="20200726215256431" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Saving</pre>
+<div created="20200726215256431" modified="20200726221855061" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Info</pre>
 </div>
 <div created="20200726215259226" modified="20200726215259226" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
 </div>
-<div created="20200726220202457" modified="20200726220202457" title="$:/state/tab/moresidebar-1850697562">
-<pre>$:/core/ui/MoreSideBar/All</pre>
+<div created="20200726220202457" modified="20200726221821787" title="$:/state/tab/moresidebar-1850697562">
+<pre>$:/core/ui/MoreSideBar/Shadows</pre>
 </div>
-<div created="20200726220158710" modified="20200726221615035" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/Recent</pre>
+<div created="20200726220158710" modified="20200726221807248" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/More</pre>
 </div>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20200726221619212" list="DefaultTiddlers [[Hello World]]" modified="20200726221717159" title="$:/StoryList">
+<div created="20200726221752702" list="$:/ControlPanel $:/config/DefaultMoreSidebarTab $:/config/DefaultSidebarTab $:/core/ui/SideBar/Open $:/Manager [[Hello World]]" modified="20200726221853158" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -11182,8 +11204,8 @@ alias dq='ls -1 |xargs du -h -s'
     }
 }</pre>
 </div>
-<div created="20200726221715844" modified="20200726221716121" title="$:/temp/search">
-<pre>def</pre>
+<div created="20200726221915022" modified="20200726221915022" title="$:/temp/NewTagName">
+<pre></pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.22">
 <pre>{
@@ -11582,7 +11604,6 @@ Stuff about Amazon Fire:
 </div>
 <div created="20130227172100000" modified="20130227172100000" modifier="flint" server.host="file:///C:/Users/cpyar/Downloads/GeekLand.html" server.page.revision="201302271721" server.type="file" title="andromouse" type="text/x-tiddlywiki">
 <pre>
-
 {{{
 java -jar andromouse,jar
 }}}</pre>
@@ -11877,8 +11898,7 @@ Kevin says...
 </pre>
 </div>
 <div created="20140330164300000" modified="20140330202200000" modifier="flint" server.host="file:///C:/Users/cpyar/Downloads/GeekLand.html" server.page.revision="201403302022" server.type="file" title="AutoFillPDFs" type="text/x-tiddlywiki">
-<pre>
-[[Basic Guidance|http://www.myown1.com/linux/pdf_formfill.shtml]]
+<pre>[[Basic Guidance|http://www.myown1.com/linux/pdf_formfill.shtml]]
 [[Good autofill description|http://www.linux.com/learn/tutorials/442414-manipulating-pdfs-with-the-pdf-toolkit]]
 [[GNU-PDF|http://www.gnupdf.org/Forms_Data_Format]]
 
@@ -12038,8 +12058,7 @@ smartmontools - control and monitor storage systems using S.M.A.R.T.
 </pre>
 </div>
 <div created="20110922145000000" modified="20110922145000000" modifier="flint" server.host="file:///C:/Users/cpyar/Downloads/GeekLand.html" server.page.revision="201109221450" server.type="file" title="badcat" type="text/x-tiddlywiki">
-<pre>
-Who knew that [[cat was bad|http://workaround.org/linuxtip/pipes]]?</pre>
+<pre>Who knew that [[cat was bad|http://workaround.org/linuxtip/pipes]]?</pre>
 </div>
 <div created="20120213234100000" modified="20120213234900000" modifier="flint" server.host="file:///C:/Users/cpyar/Downloads/GeekLand.html" server.page.revision="201202132349" server.type="file" title="BadPenguin" type="text/x-tiddlywiki">
 <pre>in a admin home directory clseed.sh
@@ -12518,7 +12537,6 @@ javaws https://audiveris.kenai.com/jnlp/launch.jnlp</pre>
 </div>
 <div created="20180220155000000" modified="20180220155300000" modifier="chris" server.host="file:///C:/Users/cpyar/Downloads/GeekLand.html" server.page.revision="201802201553" server.type="file" title="BlenderLessons" type="text/x-tiddlywiki">
 <pre>
-
 * [[Chris suggests|https://cgcookie.com/lesson/first-steps-with-blender]]</pre>
 </div>
 <div created="20170322123900000" modified="20170322123900000" modifier="flint" server.host="file:///C:/Users/cpyar/Downloads/GeekLand.html" server.page.revision="201703221239" server.type="file" title="BlockChain" type="text/x-tiddlywiki">
@@ -12696,8 +12714,7 @@ set it up in google.plus hangout...
 byzantium</pre>
 </div>
 <div created="20090505212500000" modified="20181230002300000" modifier="flint" server.host="file:///C:/Users/cpyar/Downloads/GeekLand.html" server.page.revision="201812300023" server.type="file" title="cadaver" type="text/x-tiddlywiki">
-<pre>
-* [[cadaver - A command-line {{{WebDAV}}} client for Unix.|https://www.systutorials.com/docs/linux/man/1-cadaver/]]
+<pre>* [[cadaver - A command-line {{{WebDAV}}} client for Unix.|https://www.systutorials.com/docs/linux/man/1-cadaver/]]
 </pre>
 </div>
 <div created="20101031130900000" modified="20101031130900000" modifier="flint" server.host="file:///C:/Users/cpyar/Downloads/GeekLand.html" server.page.revision="201010311309" server.type="file" title="cat" type="text/x-tiddlywiki">
@@ -12723,8 +12740,7 @@ Three ways:
 </pre>
 </div>
 <div created="20110610131900000" modified="20110610131900000" modifier="flint" server.host="file:///C:/Users/cpyar/Downloads/GeekLand.html" server.page.revision="201106101319" server.type="file" title="CDBurning" type="text/x-tiddlywiki">
-<pre>
-http://linuxreviews.org/howtos/cdrecording/</pre>
+<pre>http://linuxreviews.org/howtos/cdrecording/</pre>
 </div>
 <div created="20190401184400000" modified="20190401184400000" modifier="flint" server.host="file:///C:/Users/cpyar/Downloads/GeekLand.html" server.page.revision="201904011844" server.type="file" title="CellPhoneEmail" type="text/x-tiddlywiki">
 <pre>''1 April 2019''
@@ -12973,8 +12989,7 @@ We are imaging a bunch of machines here in the lab and I was wondering if we mig
 &lt;&lt;&lt;</pre>
 </div>
 <div created="20150104231000000" modified="20190717115900000" modifier="flint" server.host="file:///C:/Users/cpyar/Downloads/GeekLand.html" server.page.revision="201907171159" server.type="file" title="ClosingOfTheYear" type="text/x-tiddlywiki">
-<pre>
-[[Passing password to rsync|https://stackoverflow.com/questions/3299951/how-to-pass-password-automatically-for-rsync-ssh-command]]
+<pre>[[Passing password to rsync|https://stackoverflow.com/questions/3299951/how-to-pass-password-automatically-for-rsync-ssh-command]]
 
 massive ownership change prior to rsync...
 {{{
@@ -13249,8 +13264,7 @@ sed -e 's/\([0-9]\)\([0-9]\)/^M\1\2/g'
 }}}</pre>
 </div>
 <div created="20141113222400000" modified="20141125115900000" modifier="flint" server.host="file:///C:/Users/cpyar/Downloads/GeekLand.html" server.page.revision="201411251159" server.type="file" title="CoolCommands" type="text/x-tiddlywiki">
-<pre>
-place in pastebin
+<pre>place in pastebin
 {{{
 pastebinit -b http://paste.ubuntu.com/
 }}}
@@ -13362,8 +13376,7 @@ grep -a3 LIBR * | grep ACCESS |while read -r line; do line=${line#*txt-}; echo $
 }}}</pre>
 </div>
 <div created="20141129001500000" modified="20141129001500000" modifier="flint" server.host="file:///C:/Users/cpyar/Downloads/GeekLand.html" server.page.revision="201411290015" server.type="file" title="DaveSez" type="text/x-tiddlywiki">
-<pre>
-[[qtox|https://wiki.tox.im/Binaries#Apt.2FAptitude_.28Debian.2C_Ubuntu.2C_Mint.2C_etc..29]]
+<pre>[[qtox|https://wiki.tox.im/Binaries#Apt.2FAptitude_.28Debian.2C_Ubuntu.2C_Mint.2C_etc..29]]
 [[fitbit on linux|http://chrismwayne.com/?p=241]]
 </pre>
 </div>
@@ -13532,9 +13545,8 @@ grep -F -f dups SHA1SUMS &gt; fixus
 
 }}}</pre>
 </div>
-<div created="20080930205600000" modified="20200726221720512" modifier="flint" server.host="file:///C:/Users/cpyar/Downloads/GeekLand.html" server.page.revision="201804251652" server.type="file" tags="protected" title="DefaultTiddlers" type="text/vnd.tiddlywiki">
-<pre>
-[[geekland introduction]]
+<div created="20080930205600000" modified="20180425165200000" modifier="flint" server.host="file:///C:/Users/cpyar/Downloads/GeekLand.html" server.page.revision="201804251652" server.type="file" tags="protected" title="DefaultTiddlers" type="text/x-tiddlywiki">
+<pre>[[geekland introduction]]
 
 [[Tiddle Tricks|https://tiddlywiki.com/#GenerateAnRssFeed]]
 
@@ -13784,8 +13796,7 @@ said Asus has assigned engineers to develop an Android-based netbook by the end 
 [[Elkners Introduction to Scratch|https://scratch.mit.edu/projects/1495047/]]</pre>
 </div>
 <div created="20160314203100000" modified="20191230214800000" modifier="flint" server.host="file:///C:/Users/cpyar/Downloads/GeekLand.html" server.page.revision="201912302148" server.type="file" title="EnGenius" type="text/x-tiddlywiki">
-<pre>
-[[EnGenius ENH202|https://www.engeniustech.com/resources/ENH202_Usermanual_v.1.0.pdf]]
+<pre>[[EnGenius ENH202|https://www.engeniustech.com/resources/ENH202_Usermanual_v.1.0.pdf]]
 
  '30 December 2019'
 
@@ -14778,8 +14789,7 @@ Python console
 [[Getting back to gedit 3.10|http://www.omgubuntu.co.uk/2016/06/install-gedit-3-10-ubuntu-16-04-lts]]</pre>
 </div>
 <div created="20140704190800000" modified="20140707105900000" modifier="chris" server.host="file:///C:/Users/cpyar/Downloads/GeekLand.html" server.page.revision="201407071059" server.type="file" title="FunWithZenity" type="text/x-tiddlywiki">
-<pre>
-{{{
+<pre>{{{
 while [[ 1 ]] ; do tada=$(dq | grep earth |rev | sort -nr | rev); echo &quot;$tada&quot; | zenity --text-info --timeout=5 ; done
 }}}
 
@@ -14864,8 +14874,7 @@ Replace gedit with [[pluma|https://en.wikipedia.org/wiki/Pluma_(editor)]]
 * [[pluma plugin list|https://github.com/yselkowitz/pluma-plugins]]</pre>
 </div>
 <div created="20110408173600000" modified="20160915141000000" modifier="flint" server.host="file:///C:/Users/cpyar/Downloads/GeekLand.html" server.page.revision="201609151410" server.type="file" title="geditPlugins" type="text/x-tiddlywiki">
-<pre>
-[[gedit plugins|http://www.ivankristianto.com/os/ubuntu/tips-best-and-complete-plugins-for-gedit/507/]]
+<pre>[[gedit plugins|http://www.ivankristianto.com/os/ubuntu/tips-best-and-complete-plugins-for-gedit/507/]]
 
 Insert Date and Time incorrectly mapped in Gedit Version 3.18.3
 In previous versions it was bound to &lt;alt&gt;e s, 
@@ -14958,6 +14967,9 @@ http://www.tiddlytools.com/#CommentPlugin or http://www.tiddlytools.com/#Discuss
 &gt; 4. Never do business with friends.
 
 [[Benjamin Franklin's 13 Virtues|http://www.businessinsider.com/benjamin-franklin-virtues-weekly-plan-2018-1]]</pre>
+</div>
+<div created="20200211191300000" modified="20200726220306178" modifier="flint" tags="" tiddler="AgoodRoute.sh" title="GeekLand.html" type="text/vnd.tiddlywiki">
+<pre>Type the text for '11 February 2020'\n\n{{{\n#!/bin/bash\n# Wed 05 Feb 2020 08:15:28 AM EST\n# pflint\n#\n# wanders through and finds bounjour names...\n#\necho &quot;This program starts nmap&quot;\necho &quot;This could take a while...&quot;\nnmap 192.168.1.0/24 |grep report |cut -d &quot; &quot; -f 5 |xargs avahi-resolve --address |tee $(date +%F)_ip.out\n#\n# Here is what it looked like today:\n# 192.168.1.200	PROD4.local\n# 192.168.1.203	fits440.local\n# 192.168.1.201	alexator.local\n# 192.168.1.22	trantor.local\n# 192.168.1.29	pi41.local\n# 192.168.1.206	pandl.local\n# 192.168.1.208	alexator.local\n\n\n}}}</pre>
 </div>
 <div created="20160129200800000" modified="20160129200900000" modifier="alec" server.host="file:///C:/Users/cpyar/Downloads/GeekLand.html" server.page.revision="201601292009" server.type="file" title="GeekNight" type="text/x-tiddlywiki">
 <pre>* MonFeb1</pre>
@@ -15155,8 +15167,7 @@ Push commits to Github  {{{git push origin master}}}
 [[Additional Cheat Sheet|http://dont-be-afraid-to-commit.readthedocs.org/en/latest/git/commandlinegit.html]]</pre>
 </div>
 <div created="20150211123800000" modified="20170824171000000" modifier="flint" server.host="file:///C:/Users/cpyar/Downloads/GeekLand.html" server.page.revision="201708241710" server.type="file" title="gitCommandDump" type="text/x-tiddlywiki">
-<pre>
-[[Git Hub Validation|https://help.github.com/articles/error-permission-denied-publickey/]]
+<pre>[[Git Hub Validation|https://help.github.com/articles/error-permission-denied-publickey/]]
 
 {{{
 git config --global user.name &quot;flintiii&quot;
@@ -15302,8 +15313,7 @@ dev_appserver.py --port=9999 myapp
 }}}</pre>
 </div>
 <div created="20150220144500000" modified="20150220213500000" modifier="flint" server.host="file:///C:/Users/cpyar/Downloads/GeekLand.html" server.page.revision="201502202135" server.type="file" title="GoogleAppEngineResearch" type="text/x-tiddlywiki">
-<pre>
-[[Stackoverflow on -hosts|http://stackoverflow.com/questions/2168409/can-access-appengine-sdk-sites-via-local-ip-address-when-localhost-works-just-fi]]
+<pre>[[Stackoverflow on -hosts|http://stackoverflow.com/questions/2168409/can-access-appengine-sdk-sites-via-local-ip-address-when-localhost-works-just-fi]]
 [[IP and Port Remapping for GAE|http://www.ventanazul.com/webzine/articles/public-ip-google-app-engine-development-server]]
 [[Google App Engine|https://cloud.google.com/appengine/downloads?csw=1]]
 [[ GAE the trick|http://askubuntu.com/questions/123553/how-to-install-google-appengine]]
@@ -15431,8 +15441,7 @@ Are the boot flags what triggers grub2 probe?
 </pre>
 </div>
 <div created="20131118231300000" modified="20131118231300000" modifier="bill" server.host="file:///C:/Users/cpyar/Downloads/GeekLand.html" server.page.revision="201311182313" server.type="file" title="gsettings" type="text/x-tiddlywiki">
-<pre>
-{{{
+<pre>{{{
 gsettings set org.gnome.desktop.interface ubuntu-overlay-scrollbars false
 }}}</pre>
 </div>
@@ -15785,8 +15794,7 @@ DRUPAL INSTALLATION:
 12. Click on the message link &quot;You may now visit your new site.&quot; where you will be logged in to your site as the Administrator.</pre>
 </div>
 <div created="20141030163100000" modified="20160818181600000" modifier="flint" server.host="file:///C:/Users/cpyar/Downloads/GeekLand.html" server.page.revision="201608181816" server.type="file" title="HowIhateTouchpads" type="text/x-tiddlywiki">
-<pre>
-|!Reference HTML|! Description|
+<pre>|!Reference HTML|! Description|
 |[[disable touchpad |http://askubuntu.com/questions/67718/how-do-i-disable-a-touchpad-using-the-command-line]]||
 |[[disable touchpad |http://askubuntu.com/questions/67718/how-do-i-disable-a-touchpad-using-the-command-line]]||
 |[[disable touchpad |http://www.alonon.net/how-to-disable-enable-touchpad-in-ubuntu-11-10/]]||
@@ -15820,8 +15828,7 @@ Use the HP LaserJet 4000 Foomatic/lj5gray... Driver
 }}}</pre>
 </div>
 <div created="20151208135100000" modified="20151208142200000" modifier="flint" server.host="file:///C:/Users/cpyar/Downloads/GeekLand.html" server.page.revision="201512081422" server.type="file" title="HTML2pdf" type="text/x-tiddlywiki">
-<pre>
-[[wkhtmltopdf|http://wkhtmltopdf.org/]] current debian version wkhtmltopdf 0.9.9
+<pre>[[wkhtmltopdf|http://wkhtmltopdf.org/]] current debian version wkhtmltopdf 0.9.9
 
 
 example
@@ -16255,7 +16262,6 @@ package inotify tools</pre>
 </div>
 <div created="20160306211000000" modified="20160306211000000" modifier="flint" server.host="file:///C:/Users/cpyar/Downloads/GeekLand.html" server.page.revision="201603062110" server.type="file" title="InstallHardDrive" type="text/x-tiddlywiki">
 <pre>
-
 [[Good Stuff |https://help.ubuntu.com/community/InstallingANewHardDrive]]</pre>
 </div>
 <div created="20161125121300000" modified="20170418184100000" modifier="flint" server.host="file:///C:/Users/cpyar/Downloads/GeekLand.html" server.page.revision="201704181841" server.type="file" title="InstallingEnki" type="text/x-tiddlywiki">
@@ -16639,7 +16645,6 @@ root@stephen-remote:~# Xnest :2 -query 192.168.2.2
 </div>
 <div created="20151213162800000" modified="20160121213500000" modifier="flint" server.host="file:///C:/Users/cpyar/Downloads/GeekLand.html" server.page.revision="201601212135" server.type="file" title="KDE_AdjustScrollbarHandleSize" type="text/x-tiddlywiki">
 <pre>
-
 [[Move panel widgets|https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;uact=8&amp;ved=0ahUKEwjcto_V7bvKAhWDeD4KHfv4CMwQFggdMAA&amp;url=https%3A%2F%2Fuserbase.kde.org%2FPlasma%2FHowTo%2F4.5&amp;usg=AFQjCNFkEHo8r_emTdw-siRZFAqVCrLr8w&amp;sig2=ItCACyKqw92my3i_vIUJ-Q]]</pre>
 </div>
 <div created="20150624201200000" modified="20150624201200000" modifier="flint" server.host="file:///C:/Users/cpyar/Downloads/GeekLand.html" server.page.revision="201506242012" server.type="file" title="KDE_switch_to_classic_style" type="text/x-tiddlywiki">
@@ -16979,7 +16984,6 @@ ls -1 | grep ^\.
 </div>
 <div created="20110827142500000" modified="20131024213200000" modifier="flint" server.host="file:///C:/Users/cpyar/Downloads/GeekLand.html" server.page.revision="201310242132" server.type="file" title="LinuxMagazine" type="text/x-tiddlywiki">
 <pre>
-
 http://fullcirclemagazine.org/</pre>
 </div>
 <div created="20171003130500000" modified="20171003130500000" modifier="flint" server.host="file:///C:/Users/cpyar/Downloads/GeekLand.html" server.page.revision="201710031305" server.type="file" title="LinuxResources" type="text/x-tiddlywiki">
@@ -17503,8 +17507,7 @@ Greenwave is part of the infastructure....
 <pre>http://www.aosabook.org/en/index.html</pre>
 </div>
 <div created="20151007195800000" modified="20171224152200000" modifier="flint" server.host="file:///C:/Users/cpyar/Downloads/GeekLand.html" server.page.revision="201712241522" server.type="file" title="OpenStack" type="text/x-tiddlywiki">
-<pre>
-[[OpenStack Documentation|http://docs.openstack.org/index.html]]
+<pre>[[OpenStack Documentation|http://docs.openstack.org/index.html]]
 
 [[More on OpenStack|http://superuser.openstack.org/articles/sig-first-contact-openstack/]]</pre>
 </div>
@@ -17918,8 +17921,7 @@ mount -a
 </pre>
 </div>
 <div created="20120112180700000" modified="20120112180700000" modifier="flint" server.host="file:///C:/Users/cpyar/Downloads/GeekLand.html" server.page.revision="201201121807" server.type="file" title="PuttingQuotesAroundXargs" type="text/x-tiddlywiki">
-<pre>
-{{{
+<pre>{{{
 perl -pe 's{^}{\&quot;};s{$}{\&quot;}'
 }}}</pre>
 </div>
@@ -18143,8 +18145,7 @@ Kevin says look here:
 [[Function Annotations|https://www.python.org/dev/peps/pep-3107/]]</pre>
 </div>
 <div created="20160118151800000" modified="20160118151800000" modifier="flint" server.host="file:///C:/Users/cpyar/Downloads/GeekLand.html" server.page.revision="201601181518" server.type="file" title="Python30" type="text/x-tiddlywiki">
-<pre>
-[[Converting|http://python-future.org/compatible_idioms.html]]
+<pre>[[Converting|http://python-future.org/compatible_idioms.html]]
 </pre>
 </div>
 <div created="20130611201900000" modified="20160128145800000" modifier="flint" server.host="file:///C:/Users/cpyar/Downloads/GeekLand.html" server.page.revision="201601281458" server.type="file" title="PythonCore" type="text/x-tiddlywiki">
@@ -21010,12 +21011,10 @@ retty (pid of the program)
 and it will now be as if you ran it from the terminal.</pre>
 </div>
 <div created="20150103155000000" modified="20150103155000000" modifier="flint" server.host="file:///C:/Users/cpyar/Downloads/GeekLand.html" server.page.revision="201501031550" server.type="file" title="RsyncDropbox" type="text/x-tiddlywiki">
-<pre>
-[[Untried |http://lesterchan.net/blog/2011/07/15/rsync-to-dropbox-jungle-disk/]]</pre>
+<pre>[[Untried |http://lesterchan.net/blog/2011/07/15/rsync-to-dropbox-jungle-disk/]]</pre>
 </div>
 <div created="20150624204700000" modified="20150625121100000" modifier="flint" server.host="file:///C:/Users/cpyar/Downloads/GeekLand.html" server.page.revision="201506251211" server.type="file" title="s5" type="text/x-tiddlywiki">
-<pre>
-Do not forget you need the &quot;ui&quot; directory.</pre>
+<pre>Do not forget you need the &quot;ui&quot; directory.</pre>
 </div>
 <div created="20081220145100000" modified="20081220145100000" modifier="alec" server.host="file:///C:/Users/cpyar/Downloads/GeekLand.html" server.page.revision="200812201451" server.type="file" title="SafetyDance" type="text/x-tiddlywiki">
 <pre>We can dance if we want to
@@ -22368,8 +22367,7 @@ date -d &quot;2013-04-03&quot; +%s
 <pre>[[Good Toolbox|http://cb.vu/unixtoolbox.xhtml]]</pre>
 </div>
 <div created="20140515120100000" modified="20140515120800000" modifier="flint" server.host="file:///C:/Users/cpyar/Downloads/GeekLand.html" server.page.revision="201405151208" server.type="file" tags="Not_systemConfig" title="Updatetext contents with JS" type="text/x-tiddlywiki">
-<pre>
-&lt;html&gt;
+<pre>&lt;html&gt;
 &lt;form action=&quot;#&quot; id=&quot;form_field&quot;&gt;
    &lt;input type=&quot;text&quot; id=&quot;textfield1&quot; value=&quot;&quot; onKeyUp=&quot;document.getElementById('textfield2').innerHTML=this.value&quot;&gt;
    &lt;div id=&quot;textfield2&quot; value=&quot;&quot;&gt;Paul start typing in the above box&lt;/div&gt;
@@ -22389,8 +22387,7 @@ Code:
 <pre>Type the text for 'New Tiddler'</pre>
 </div>
 <div created="20160511120200000" modified="20160519123800000" modifier="flint" server.host="file:///C:/Users/cpyar/Downloads/GeekLand.html" server.page.revision="201605191238" server.type="file" title="USBinfo" type="text/x-tiddlywiki">
-<pre>
-* [[usb.org|http://www.usb.org/home]]
+<pre>* [[usb.org|http://www.usb.org/home]]
 ** [[USB power |http://www.usb.org/developers/whitepapers/power_delivery_motherboards.pdf]]
 * [[Electrical |http://www.usbmadesimple.co.uk/ums_2.htm]]
 ** [[USB Made Simple|http://www.usbmadesimple.co.uk/ums_1.htm]]</pre>
@@ -22638,7 +22635,6 @@ if __name__ == &quot;__main__&quot;:
 </div>
 <div created="20160304123400000" modified="20160304123800000" modifier="flint" server.host="file:///C:/Users/cpyar/Downloads/GeekLand.html" server.page.revision="201603041238" server.type="file" title="vnc" type="text/x-tiddlywiki">
 <pre>
-
 [[Start VNC from command line|https://www.realvnc.com/products/vnc/documentation/5.1/guides/user/ap1075135.html]]
 
 ''Which one to use?''
@@ -22678,8 +22674,7 @@ ShmCleanup called
 }}}</pre>
 </div>
 <div created="20121214124500000" modified="20121214124900000" modifier="flint" server.host="file:///C:/Users/cpyar/Downloads/GeekLand.html" server.page.revision="201212141249" server.type="file" title="VPNtunnels" type="text/x-tiddlywiki">
-<pre>
-[[ raccoon|http://www.howtoforge.com/racoon_roadwarrior_vpn]] You don't need to worry about a tunnel going down and staying down (unless you've got connectivity issues) as you can have raccoon test the connection and re-construct it if it breaks. 
+<pre>[[ raccoon|http://www.howtoforge.com/racoon_roadwarrior_vpn]] You don't need to worry about a tunnel going down and staying down (unless you've got connectivity issues) as you can have raccoon test the connection and re-construct it if it breaks. 
 Additionally free routing platforms like 
 [[Sophos|http://www.sophos.com/en-us/products/unified/utm/features.aspx]] and 
 [[PFSense|http://doc.pfsense.org/index.php/VPN_Capability_OpenVPN]]</pre>
@@ -22782,7 +22777,6 @@ for IP in 159.105.80.88 159.105.80.69 fpsvr uvm.edu; do  echo -n &quot;Ping time
 </div>
 <div created="20160410005200000" modified="20171029132900000" modifier="flint" server.host="file:///C:/Users/cpyar/Downloads/GeekLand.html" server.page.revision="201710291329" server.type="file" title="WDMyCloud" type="text/x-tiddlywiki">
 <pre>
-
 [[Get ssh running on it|http://support.wdc.com/KnowledgeBase/answer.aspx?ID=10435#mycloudos3]]
 
 userid is &quot;sshd&quot;
@@ -22850,8 +22844,7 @@ https://www.bitvise.com/ssh-client</pre>
 [[Nirsoft|http://www.nirsoft.net/]]</pre>
 </div>
 <div created="20090713125200000" modified="20090713132200000" modifier="flint" server.host="file:///C:/Users/cpyar/Downloads/GeekLand.html" server.page.revision="200907131322" server.type="file" title="winwire" type="text/x-tiddlywiki">
-<pre>
-Winwire is a tool needs to be built with tracks the checksums of vital windows files.  
+<pre>Winwire is a tool needs to be built with tracks the checksums of vital windows files.  
 
 Winwire would operate in a similar way to [[tripwire | http://en.wikipedia.org/wiki/Open_Source_Tripwire]]
 
@@ -23035,7 +23028,6 @@ works with correct delimiter
 </div>
 <div created="20160602080600000" modified="20160602080600000" modifier="flint" server.host="file:///C:/Users/cpyar/Downloads/GeekLand.html" server.page.revision="201606020806" server.type="file" title="xenialTouchpad" type="text/x-tiddlywiki">
 <pre>
-
 [[Touchpad Management in Xenial|http://askubuntu.com/questions/58584/can-i-automatically-deactivate-my-touchpad-when-a-usb-mouse-is-connected]]</pre>
 </div>
 <div created="20171129195900000" modified="20171129195900000" modifier="flint" server.host="file:///C:/Users/cpyar/Downloads/GeekLand.html" server.page.revision="201711291959" server.type="file" title="XML" type="text/x-tiddlywiki">
@@ -23058,8 +23050,7 @@ EndSection
 }}}</pre>
 </div>
 <div created="20150102222200000" modified="20150102222200000" modifier="flint" server.host="file:///C:/Users/cpyar/Downloads/GeekLand.html" server.page.revision="201501022222" server.type="file" title="XWindows" type="text/x-tiddlywiki">
-<pre>
-[[xdotool|http://manpages.ubuntu.com/manpages/lucid/man1/xdotool.1.htm]]</pre>
+<pre>[[xdotool|http://manpages.ubuntu.com/manpages/lucid/man1/xdotool.1.htm]]</pre>
 </div>
 <div created="20151023124600000" modified="20151023131800000" modifier="flint" server.host="file:///C:/Users/cpyar/Downloads/GeekLand.html" server.page.revision="201510231318" server.type="file" title="XwindowsProgrammingTricks" type="text/x-tiddlywiki">
 <pre>|!Reference HTML|! Description|
